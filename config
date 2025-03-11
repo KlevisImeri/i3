@@ -62,7 +62,6 @@ bindsym $mod+d exec --no-startup-id "dmenu_run -nf '#BBBBBB' -nb '#222222' -sb '
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
-bindsym $mod+Escape exec i3lock -c 000000 && xset dpms force off
 bindsym $mod+Shift+s exec flameshot gui
 
 # change focus
