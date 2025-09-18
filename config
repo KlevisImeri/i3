@@ -31,8 +31,8 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --nofork
 exec --no-startup-id xset s noblank
 exec --no-startup-id xset s off -dpms
-# Turn off the screen
-bindsym $mod+o exec --no-startup-id xset dpms force off && xset s noblank
+# Turn off the screen (Be careful if you move your mouse ti will come right up)
+bindsym $mod+o exec --no-startup-id xset dpms force off
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
