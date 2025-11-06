@@ -30,7 +30,7 @@ exec --no-startup-id dex-autostart --autostart --environment i3
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock -c 000000 --nofork
 exec --no-startup-id xset s noblank
-exec --no-startup-id xset s off -dpms
+exec --no-startup-id xset s on -dpms
 # Turn off the screen (Be careful if you move your mouse ti will come right up)
 bindsym $mod+o exec --no-startup-id xset dpms force off
 
@@ -53,7 +53,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec alacritty -e nvim -c 'terminal'
 
 # kill focused window
 bindsym $mod+Shift+q kill
