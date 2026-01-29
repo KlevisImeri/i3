@@ -19,7 +19,7 @@ if [ "$IS_WAYLAND" = true ]; then
         swaymsg output "$INTERNAL_MONITOR" enable
     fi
 else
-  EXTERNAL_MONITORS=("HDMI-1-1" "HDMI-1-2" "HDMI-1-4" "HDMI-1" "HDMI-2", "HDMI-A-2")
+  EXTERNAL_MONITORS=("HDMI-1-1" "HDMI-1-2" "HDMI-1-4" "HDMI-1" "HDMI-2" "HDMI-A-2")
   EXTERNAL_MONITOR_FOUND=false
 
   for MONITOR in "${EXTERNAL_MONITORS[@]}"; do
