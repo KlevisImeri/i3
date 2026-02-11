@@ -42,6 +42,9 @@ exec --no-startup-id nm-applet
 exec --no-startup-id udiskie -a -n -t
 exec_always --no-startup-id ~/.config/i3/display.sh && feh --bg-scale ~/wallpapers/main.jpg
 
+# Start ActivityWatch
+exec --no-startup-id /opt/activitywatch/aw-qt
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
