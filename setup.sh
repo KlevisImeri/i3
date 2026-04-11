@@ -14,8 +14,4 @@ sudo dnf install -y \
     dmenu \
     alacritty \
     flameshot \
-    pulseaudio-utils \
-    wireless-tools \
-    lm_sensors \
-    acpi \
-    pango
+    pulseaudio-utils
