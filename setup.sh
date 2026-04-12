@@ -5,12 +5,11 @@ sudo dnf install -y \
     i3status \
     i3lock \
     xss-lock \
-    xorg-xset \
-    xorg-xrandr \
+    xrandr \
     network-manager-applet \
     udiskie \
     feh \
-    dex \
+    dex-autostart \
     dmenu \
     alacritty \
     flameshot \
