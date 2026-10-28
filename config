@@ -40,7 +40,7 @@ exec --no-startup-id nm-applet
 
 # Automounting the disks (ex. USB)
 exec --no-startup-id udiskie -a -n -t
-exec_always --no-startup-id ~/.config/i3/display.sh && feh --bg-scale ~/wallpapers/main.jpg
+exec_always --no-startup-id ~/.config/i3/display/target/release/i3-display && feh --bg-scale ~/wallpapers/main.jpeg
 
 # Start ActivityWatch
 exec --no-startup-id /opt/activitywatch/aw-qt
